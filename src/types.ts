@@ -1,5 +1,6 @@
 /**
  * Racing Video Factory & 3D High-End Simulator - Type Definitions
+ * Synchronized & Verified
  */
 export type ResolutionPreset = '1080x1920 (Full HD Dọc)' | '720x1280 (HD Dọc)' | '1440x2560 (2K Dọc)' | '2160x3840 (4K Dọc)' | '1080p (Ngang)' | '720p' | '4K';
 export type AspectRatioOption = '9:16' | '16:9';

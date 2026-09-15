@@ -402,17 +402,7 @@ export class RacingInstance {
         aiAggressionGlobal
       );
 
-      // 2. Sort ranks by total distance
-      const sorted = [...this.cars].sort((a, b) => {
-        const distA = a.state.lap + a.state.lapProgress;
-        const distB = b.state.lap + b.state.lapProgress;
-        return distB - distA;
-      });
-      sorted.forEach((car, index) => {
-        car.state.rank = index + 1;
-      });
-
-      // 3. Update Camera Director
+      // 2. Update Camera Director
       this.cameraDirector.update(
         this.cars,
         delta,
